@@ -1,0 +1,776 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #eee;
+}
+
+header {
+
+}
+
+a {
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.15em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.email {
+  width: 98%;
+  padding: 3% 0;
+  margin-bottom: 2%;
+}
+
+.btn {
+  width: 100%;
+  padding: 3%;
+  color: #fff;
+  background-color: #A42F4A;
+}
+
+.btn:hover {
+  background-color: #EB395A;
+  cursor: pointer;
+}
+
+button i {
+  padding-right: 4%;
+}
+
+.input-btn {
+
+}
+/* Header ===================== */
+.main-header {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.header-wrapper {
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+nav i {
+	padding-right: 10px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: block;
+  width: 100%;
+  padding: 5% 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Main Content ======================= */
+main {
+  width: 96%;
+  padding: 0 2%;
+  margin: auto;
+  clear: both;
+}
+
+.hero-area {
+  width: 100%;
+  margin-top: 7%;
+}
+
+/* Featured News Item ======================= */
+.top-story {
+  width: 100%;
+}
+
+.top-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar ======================= */
+.sidebar {
+  width: 100%;
+}
+
+.sidebar-newsletter {
+  width: 100%;
+}
+
+.sidebar-newsletter form {
+  width: 100%;
+}
+
+.sidebar-about-us {
+  display: none;
+}
+
+.sidebar-faqs {
+  display: none;
+}
+
+/* Feed Section ======================= */
+.feed {
+  width: 100%;
+}
+
+.feed-item {
+  width: 100%;
+}
+
+.feed-type {
+  width: 100%;
+  margin-top: 0;
+}
+
+.feed-img {
+  width: 45%;
+  float: left;
+  margin-right: 2%;
+}
+
+.feed-item h2 {
+  width: 47.5%;
+  margin: 0;
+  float: right;
+}
+
+.feed-item p {
+  display: none;
+}
+
+/* ABOUT PAGE ================================ */
+
+.contact-info {
+  width: 100%;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.mission {
+  clear: both;
+}
+
+.team-member {
+  padding: 15px 0;
+  clear: both;
+}
+
+.team-img {
+   width: 40%;
+   padding-bottom: 40%;
+   float: left;
+   margin-right: 20px;
+   border: 1px solid #ccc;
+}
+
+.team-name {
+
+}
+
+.team-title {
+
+}
+
+.team-description {
+  display: none;
+}
+
+#team-img-jack {
+   background-image: url('../img/team-jack.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#team-img-lana {
+  background-image: url('../img/team-lana.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#team-img-willow {
+  background-image: url('../img/team-willow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Footer ========================== */
+footer {
+  width: 100%;
+  margin: auto;
+  clear: both;
+  margin-top: 5%;
+}
+
+.footer-logo {
+  width: 47.5%;
+  margin: auto;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+  /* tablet styles here! */
+  /* Global Styles =========== */
+  h2 {
+    font-size: 1.45em;
+  }
+
+  /* Header ============ */
+  .main-header {
+    margin: auto;
+  }
+
+  .main-header .header-wrapper {
+    width: 94%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 40%;
+    float: left;
+  }
+
+  nav {
+    width: 60%;
+    float: left;
+    padding: 1% 0;
+  }
+
+  nav ul {
+    padding: 7%;
+    margin: auto;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline;
+    width: 100%;
+    padding: 0 5%;
+    border-bottom: none;
+  }
+
+  /* Featured News Item =========== */
+  .top-story {
+    width: 100%;
+  }
+
+  .top-img {
+    width: 57%;
+    float: left;
+    padding-right: 3%;
+    padding-bottom: 3%;
+  }
+
+  .top-info {
+    width: 40%;
+    float: left;
+  }
+
+  .top-info h1 {
+    margin: 0;
+  }
+
+  hr {
+    /*clear: both;*/
+  }
+
+  /* Feed Section ======================= */
+  .feed {
+    width: 60%;
+    float: left;
+    margin-bottom: 5%;
+  }
+
+  /* About Page =============== */
+  .contact-info{
+    width: 35%;
+    float: left;
+  }
+
+  .map-container {
+    padding-bottom: 45%;
+    margin-top: 5%;
+    width: 60%;
+  }
+
+  .map-container iframe {
+    left: 30px;
+  }
+
+  /* Sidebar ============== */
+  .sidebar {
+    width: 37%;
+    float: right;
+    border-left: 1px solid #ccc;
+    padding-left: 2%;
+  }
+
+  .sidebar-newsletter,
+  .sidebar-about-us,
+  .sidebar-faqs {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5%;
+  }
+
+  .sidebar-about-us, .sidebar-faqs {
+    display: block;
+  }
+
+  /* Team ==================== */
+  .team-img {
+    width: 25%;
+    padding-bottom: 25%;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .team-description {
+      display: none;
+    }
+
+  /* Footer =================== */
+  .footer-logo {
+    width: 30%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  /*desktop styles here!*/
+  /* Header =============== */
+  .main-header .header-wrapper {
+    max-width: inherit;
+  }
+
+  .hero-area {
+    width: 65%;
+    margin-top: 7%;
+    float: left;
+  }
+
+  nav ul li a {
+    font-size: 1.3em;
+  }
+
+  /* Featured News Item =========== */
+  .top-story {
+    width: 100%;
+  }
+
+  .top-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-info {
+    width: 100%;
+  }
+
+  .hr-tablet {
+    display: none;
+  }
+
+/* Side Bar =========================== */
+  .sidebar {
+    width: 30%;
+    float: right;
+    margin-top: 7%;
+    border-left: 1px solid #ccc;
+    padding-left: 2%;
+  }
+
+  .sidebar-newsletter,
+  .sidebar-about-us,
+  .sidebar-faqs {
+    padding-bottom: 5%;
+    border-bottom: 1px solid #ccc;
+  }
+
+/* News/Reviews Feed Section =========================== */
+  .feed {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+
+  .feed-item h2 {
+    width: 100%;
+  }
+
+  .feed-item p {
+    display: block;
+    margin-top: 0;
+  }
+
+  .feed-img {
+    width: 20%;
+  }
+
+  .feed-info {
+    float: right;
+    width: 75%;
+  }
+
+  /* Team ==================== */
+  .team-img {
+    width: 20%;
+    padding-bottom: 25%;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .team-name, .team-title {
+    margin: 0;
+  }
+
+  .team-description {
+    display: block;
+  }
+
+  /* Footer =========================== */
+
+  .footer-logo {
+    width: 20%;
+    clear: both;
+  }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
